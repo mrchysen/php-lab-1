@@ -35,5 +35,8 @@
 docker-compose -f docker-compose.yaml up
 ```
 
+## Демонстрация
 
+![photo1](./img/1.png)
+![photo2](./img/2.png)
 
