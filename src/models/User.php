@@ -4,14 +4,14 @@
 require_once '../src/models/GuidGenerator.php';
 
 class User {
-    public $id; // 32
-    public $name; // 32
-    public $sername; // 32
-    public $sex; // 1
-    public $birthDate; // 10
-    public $birthPlace; // 128
-    public $createdDate; // 10
-    public $updatedDate; // 10
+    public $id;
+    public $name;
+    public $sername;
+    public $sex;
+    public $birthDate;
+    public $birthPlace;
+    public $createdDate;
+    public $updatedDate;
 
     // For adding
     public function __construct($name, $sername, $sex, $birthDate, $birthPlace) {
