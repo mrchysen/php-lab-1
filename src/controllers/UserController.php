@@ -93,8 +93,6 @@ class UserController {
     // admin only
     // POST - /users/change - изменение файла
     public function postUsersChange(string $text) {
-        echo "попытка изменения файла <br> " . $text;
-    
         if(!isset($_SESSION['admin'])) {
             return;
         }
@@ -103,7 +101,7 @@ class UserController {
             $this->userFile->saveText($text);
         }
 
-        //header('Location: /users');
-        //exit();
+        header('Location: /users');
+        exit();
     }
 }

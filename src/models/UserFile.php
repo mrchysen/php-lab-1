@@ -22,8 +22,8 @@ class UserFile {
     }
 
     public function isValidChange($text) {
-        $elements = explode("\n", $text);
-        
+        $elements =  array_filter(explode("\n", $text), 'strlen');
+
         foreach ($elements as $el) {
             if(count(explode(' ', $el)) !== self::ELEMENTS_COUNT_IN_FILE){
                 return false;

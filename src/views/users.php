@@ -3,7 +3,7 @@
         <input type="text" 
                id="searchInput" 
                class="search-input" 
-               placeholder="🔍 Поиск по имени, фамилии, месту рождения..." 
+               placeholder="🔍 Поиск по фамилии" 
                value="<?= htmlspecialchars($_GET['filter'] ?? '') ?>">
         <button id="searchBtn" class="search-btn">Искать</button>
         <?php if (!empty($_GET['filter'])): ?>
